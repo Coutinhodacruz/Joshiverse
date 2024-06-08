@@ -1,5 +1,5 @@
 import React from 'react'
-import JoshiverseLogo from '../../asset/image/logo/joshiverse.81bbc5229f044a87bd45.jpeg'
+import JoshiverseLogo from '../../asset/image/logo/joshiverse-icon.jpeg'
 
 const NavBar = () => {
   return (

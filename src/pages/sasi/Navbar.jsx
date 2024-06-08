@@ -1,19 +1,52 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Sasilogo from '../../asset/image/logo/sasi-icon.png';
-import HeroPage from './HeroPage';
+import { MenuIcon, XIcon } from '@heroicons/react/outline';
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const handleNavigation = (path) => {
+    navigate(path);
+    setIsOpen(false); // Close the menu when an item is clicked
+  };
+
   return (
-    <div>
-      <div className='flex justify-between p-4'>
-        <img className='w-24 ml-20 mt-3' src={Sasilogo} alt='sasi Logo' />
-        <div className='flex space-x-14 text-lg font-semibold font-sans mt-3 text-white'  style={{ fontWeight: 'bold', marginRight: '15%', fontSize: '20px' }}>
-         <p className='cursor-pointer hover:text-[#F8B864]'>Home</p>
-          <p className='cursor-pointer hover:text-[#F8B864]'>About</p>
-          <p className='cursor-pointer hover:text-[#F8B864]'>Event</p>
-          <p className='cursor-pointer hover:text-[#F8B864]'>Contact</p>
+    <div className="text-black">
+      <div className="flex justify-between items-center p-4">
+        <img className="w-24 ml-16" src={Sasilogo} alt="SASI Logo" />
+        <div className="hidden md:flex space-x-14 text-lg font-semibold font-sans" style={{ fontWeight: 'bold', marginRight: '10%', fontSize: '20px' }}>
+          <div onClick={() => handleNavigation('/home')} className="cursor-pointer hover:text-[#e32c2c]">Home</div>
+          <div onClick={() => handleNavigation('/about')} className="cursor-pointer hover:text-[#e32c2c]">About</div>
+          <div onClick={() => handleNavigation('/event')} className="cursor-pointer hover:text-[#e32c2c]">Event</div>
+          <div onClick={() => handleNavigation('/contact')} className="cursor-pointer hover:text-[#e32c2c]">Contact</div>
+          <button
+            className="bg-[#e32c2c] text-white font-bold hover:bg-white hover:text-[#74706b]"
+            style={{ width: '160px', height: '40px', fontSize: '90%', whiteSpace: 'nowrap', borderRadius: '5px' }}
+            onClick={() => handleNavigation('/partner')}
+          >
+            Become a partner
+          </button>
+        </div>
+        <div className="md:hidden mr-4">
+          <button onClick={toggleMenu}>
+            {isOpen ? <XIcon className="w-8 h-8 text-white" /> : <MenuIcon className="w-8 h-8 text-white" />}
+          </button>
         </div>
       </div>
+      {isOpen && (
+        <div className="md:hidden bg-black text-white">
+          <div onClick={() => handleNavigation('/home')} className="block px-4 py-2 hover:text-[#F8B864]">Home</div>
+          <div onClick={() => handleNavigation('/about')} className="block px-4 py-2 hover:text-[#F8B864]">About</div>
+          <div onClick={() => handleNavigation('/event')} className="block px-4 py-2 hover:text-[#F8B864]">Event</div>
+          <div onClick={() => handleNavigation('/contact')} className="block px-4 py-2 hover:text-[#F8B864]">Contact</div>
+        </div>
+      )}
     </div>
   );
 };

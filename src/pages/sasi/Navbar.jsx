@@ -26,8 +26,8 @@ const Navbar = () => {
           <div onClick={() => handleNavigation('/event')} className="cursor-pointer hover:text-[#e32c2c]">Event</div>
           <div onClick={() => handleNavigation('/contact')} className="cursor-pointer hover:text-[#e32c2c]">Contact</div>
           <button
-            className="bg-[#e32c2c] text-white font-bold hover:bg-white hover:text-[#74706b]"
-            style={{ width: '160px', height: '40px', fontSize: '90%', whiteSpace: 'nowrap', borderRadius: '5px' }}
+            className="bg-[#e32c2c] text-white font-bold hover:bg-[#e25151] hover:text-white"
+            style={{ width: '160px', height: '40px', fontSize: '90%', whiteSpace: 'nowrap', borderRadius: '3px' }}
             onClick={() => handleNavigation('/partner')}
           >
             Become a partner
@@ -35,16 +35,16 @@ const Navbar = () => {
         </div>
         <div className="md:hidden mr-4">
           <button onClick={toggleMenu}>
-            {isOpen ? <XIcon className="w-8 h-8 text-white" /> : <MenuIcon className="w-8 h-8 text-white" />}
+            {isOpen ? <XIcon className="w-8 h-8 text-black" /> : <MenuIcon className="w-8 h-8 text-black" />}
           </button>
         </div>
       </div>
       {isOpen && (
         <div className="md:hidden bg-black text-white">
-          <div onClick={() => handleNavigation('/home')} className="block px-4 py-2 hover:text-[#F8B864]">Home</div>
-          <div onClick={() => handleNavigation('/about')} className="block px-4 py-2 hover:text-[#F8B864]">About</div>
-          <div onClick={() => handleNavigation('/event')} className="block px-4 py-2 hover:text-[#F8B864]">Event</div>
-          <div onClick={() => handleNavigation('/contact')} className="block px-4 py-2 hover:text-[#F8B864]">Contact</div>
+          <div onClick={() => handleNavigation('/home')} className="block px-4 py-2 hover:text-[#e32c2c]">Home</div>
+          <div onClick={() => handleNavigation('/about')} className="block px-4 py-2 hover:text-[#e32c2c]">About</div>
+          <div onClick={() => handleNavigation('/event')} className="block px-4 py-2 hover:text-[#e32c2c]">Event</div>
+          <div onClick={() => handleNavigation('/contact')} className="block px-4 py-2 hover:text-[#e32c2c]">Contact</div>
         </div>
       )}
     </div>

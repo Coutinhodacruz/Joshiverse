@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import JoshiverseLogo from '../../asset/image/logo/joshiverse.81bbc5229f044a87bd45.jpeg';
+import JoshiverseLogo from '../../asset/logo/joshiverse-icon.jpeg';
 import { FaArrowRight } from 'react-icons/fa';
 
 

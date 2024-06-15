@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaArrowRight } from 'react-icons/fa';
-import HeroImage from '../../asset/image/images/hero.webp'
+import HeroImage from '../../asset/images/hero.webp'
 
 
 const Hero = () => {

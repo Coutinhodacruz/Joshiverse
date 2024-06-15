@@ -1,0 +1,18 @@
+/* Add this to your global CSS file (e.g., styles.css) */
+
+@media (min-width: 45em) {
+    .image-container {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+  }
+  
+  .image-container {
+    position: relative;
+    margin-top: 0;
+    margin-left: -32px;
+    margin-right: -32px;
+    width: calc(100% + 64px);
+  }
+  

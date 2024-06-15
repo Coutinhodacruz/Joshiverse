@@ -9,7 +9,7 @@ const SasiPage = () => {
     <div className='bg-[#eeeeee]'>
         <HeroPage/>
         <About/>
-       {/* <Event/> */}
+       <Event/>
     </div>
   )
 }

@@ -47,7 +47,7 @@ const Modal = ({ isOpen, onClose }) => {
           onClick={() => window.location.href = 'https://paystack.com'} 
           color="primary"
           variant="contained"
-          style={{ backgroundColor: '#F8B864', color: '#fff' }}
+          style={{ backgroundColor: '#e32c2c', color: '#fff' }}
         >
           Proceed to Pay
         </Button>

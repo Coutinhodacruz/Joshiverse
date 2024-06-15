@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaCheckSquare } from 'react-icons/fa';
-import Image from '../../asset/image/images/image.png';
+import Image from '../../asset/images/image.png';
 
 const About = () => {
   return (

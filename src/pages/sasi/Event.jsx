@@ -7,26 +7,18 @@ import jordan from "../../asset/images/jordan.jpg";
 const Event = () => {
   return (
     <>
-      <section className="py-4 lg:py-14 px-4 sm:px-20 md:px-32 lg:px-24 max-w-7xl mx-auto overflow-hidden">
-        <div className="grid grid-cols-4 gap-4 lg:grid-cols-12 lg:gap-6 lg:mx-24">
+      {/* <section className="py-4 lg:py-14 px-4 sm:px-20 md:px-32 lg:px-24 max-w-7xl mx-auto overflow-hidden"> */}
+        <div className="grid mt-24 grid-cols-4 gap-4 lg:grid-cols-12 lg:gap-6 lg:mx-24">
           <article className="col-span-4 md:col-span-8 lg:col-start-4 lg:col-end-10">
-            <h3 className="text-center font-bold text-2xl lg:text-4xl">
+            <h3
+              className="text-center text-2xl lg:text-4xl text-gray-800 font-sans"
+              style={{ fontWeight: 600 }}>
               We help children in emergencies, poverty, or facing abuse and
               exploitation
             </h3>
           </article>
         </div>
-      </section>
-
-      {/* <section className="py-4 lg:py-14 px-4 sm:px-20 md:px-32 lg:px-24 max-w-7xl mx-auto overflow-hidden">
-  <div className="grid grid-cols-4 gap-4 lg:grid-cols-12 lg:gap-6 lg:mx-24">
-    <article className="col-span-4 md:col-span-8 lg:col-start-4 lg:col-end-10">
-      <h3 className="text-center font-bold text-2xl lg:text-4xl break-words">
-        We help children in emergencies, poverty, or facing abuse and exploitation
-      </h3>
-    </article>
-  </div>
-</section> */}
+      {/* </section> */}
 
       <section className="block overflow-hidden w-full mx-auto max-w-screen-xl px-4 py-4 md:px-20 md:py-10 lg:px-24 lg:py-14">
         <div className="w-full relative mx-auto">
@@ -46,10 +38,10 @@ const Event = () => {
                       />
                     </div>
                     <div className="p-4">
-                      <span className="block text-xl font-bold mb-2">
+                      <span className="block text-xl font-bold mb-2 font-serif text-gray-800">
                         Responding to emergencies
                       </span>
-                      <p className="mb-4">
+                      <p className="mb-4  text-[#777777]">
                         When war and disasters happen, we respond with immediate
                         relief and long-term rebuilding.
                       </p>
@@ -75,10 +67,10 @@ const Event = () => {
                       />
                     </div>
                     <div className="p-4">
-                      <span className="block text-xl font-bold mb-2">
+                      <span className="block text-xl font-bold mb-2 font-serif text-gray-800">
                         Helping children in poverty
                       </span>
-                      <p className="mb-4">
+                      <p className="mb-4  text-[#777777]">
                         We support communities to tackle the root causes of
                         poverty for lasting change.
                       </p>
@@ -104,10 +96,10 @@ const Event = () => {
                       />
                     </div>
                     <div className="p-4">
-                      <span className="block text-xl font-bold mb-2">
+                      <span className="block text-xl font-bold mb-2 font-serif text-gray-800">
                         Protecting children most at risk
                       </span>
-                      <p className="mb-4">
+                      <p className="mb-4 text-[#777777]">
                         Speaking out on issues like child marriage, child
                         soldiers, child labour and violence.
                       </p>
@@ -128,5 +120,3 @@ const Event = () => {
 };
 
 export default Event;
-
-

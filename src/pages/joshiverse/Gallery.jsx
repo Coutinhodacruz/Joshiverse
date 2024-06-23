@@ -1,5 +1,5 @@
 import React from 'react'
-import Sasi from '../../asset/image/images/image.png'
+import Sasi from '../../asset/images/image.png'
 import { useNavigate } from 'react-router-dom'
 
 const Gallery = () => {

@@ -36,20 +36,23 @@ const PartnerModal = ({ isOpen, onClose }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission logic here
     console.log('Form Data:', formData);
     await saveToGoogleSheets(formData);
-    // Close the modal after form submission
     onClose();
   };
 
   const saveToGoogleSheets = async (data) => {
-    const response = await fetch('https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec', {
-      method: 'POST',
-      body: JSON.stringify(data),
-    });
-    const result = await response.json();
-    console.log('Google Sheets API response:', result);
+    try {
+      const response = await fetch('', {
+        method: 'POST',
+        body: JSON.stringify(data),
+      });
+      const result = await response.json();
+      console.log("this is the response -->", response)
+      console.log('Google Sheets API response:', result);
+    } catch (error) {
+      console.error('Error saving to Google Sheets:', error);
+    }
   };
 
   return (
@@ -95,7 +98,9 @@ const PartnerModal = ({ isOpen, onClose }) => {
             <Button onClick={onClose} color="secondary" style={{ marginRight: '8px' }}>
               Cancel
             </Button>
-            <Button type="submit" variant="contained" color="primary">
+            <Button
+            onClick={handleSubmit}
+             style={{ backgroundColor: '#e32c2c', color: '#fff' }}>
               Submit
             </Button>
           </Box>

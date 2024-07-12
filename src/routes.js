@@ -4,7 +4,7 @@ import SasiPage from "./pages/sasi/SasiPage";
 
 export const ROUTES = [
     {
-        path: '/joshiverse',
+        path: '',
         element: <JoshiversePage/>
     },
     {

@@ -3,6 +3,10 @@ import NavBar from './NavBar'
 import Hero from './Hero'
 import Statistics from './Statistics'
 import About from './About'
+import Gallery from './Gallery'
+import Footer from './Footer'
+import Form from './Form'
+import Socials from './Socials'
 
 const JoshiversePage = () => {
   return (
@@ -11,6 +15,11 @@ const JoshiversePage = () => {
       <Hero/>
       <Statistics/>
       <About/>
+      <Gallery/>
+      <Form/>
+      <Socials/>
+      <Footer/>
+
     </div>
   )
 }

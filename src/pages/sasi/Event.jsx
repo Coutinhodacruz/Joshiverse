@@ -1,5 +1,6 @@
 import React from "react";
 import { FaChevronRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import somalia from "../../asset/images/somalia.jpg";
 import kenya from "../../asset/images/kenyapoverty.jpg";
 import jordan from "../../asset/images/jordan.jpg";
@@ -7,7 +8,6 @@ import jordan from "../../asset/images/jordan.jpg";
 const Event = () => {
   return (
     <>
-      {/* <section className="py-4 lg:py-14 px-4 sm:px-20 md:px-32 lg:px-24 max-w-7xl mx-auto overflow-hidden"> */}
         <div className="grid mt-24 grid-cols-4 gap-4 lg:grid-cols-12 lg:gap-6 lg:mx-24">
           <article className="col-span-4 md:col-span-8 lg:col-start-4 lg:col-end-10">
             <h3
@@ -18,17 +18,16 @@ const Event = () => {
             </h3>
           </article>
         </div>
-      {/* </section> */}
-
+        
       <section className="block overflow-hidden w-full mx-auto max-w-screen-xl px-4 py-4 md:px-20 md:py-10 lg:px-24 lg:py-14">
         <div className="w-full relative mx-auto">
           <div className="overflow-hidden -mx-4 md:-mx-6">
             <div className="flex flex-col md:flex-row transition-transform duration-300">
               <div className="flex-shrink-0 w-full md:w-1/3 p-2">
                 <div>
-                  <a
+                  <Link
                     className="block"
-                    href="/our-work/emergency-response/"
+                    to="/our-work/emergency-response"
                     aria-label="Responding to emergencies">
                     <div className="relative overflow-hidden border-b-8 border-red-600 rounded-none h-64 md:h-80">
                       <img
@@ -50,14 +49,14 @@ const Event = () => {
                         <FaChevronRight className="ml-2" />
                       </span>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="flex-shrink-0 w-full md:w-1/3 p-2">
                 <div>
-                  <a
+                  <Link
                     className="block"
-                    href="/our-work/child-poverty/"
+                    to="/our-work/child-poverty"
                     aria-label="Helping children in poverty">
                     <div className="relative overflow-hidden border-b-8 border-red-600 rounded-none h-64 md:h-80">
                       <img
@@ -79,14 +78,14 @@ const Event = () => {
                         <FaChevronRight className="ml-2" />
                       </span>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="flex-shrink-0 w-full md:w-1/3 p-2">
                 <div>
-                  <a
+                  <Link
                     className="block"
-                    href="/our-work/child-protection/"
+                    to="/our-work/child-protection"
                     aria-label="Protecting children most at risk">
                     <div className="relative overflow-hidden border-b-8 border-red-600 rounded-none h-64 md:h-80">
                       <img
@@ -108,7 +107,7 @@ const Event = () => {
                         <FaChevronRight className="ml-2" />
                       </span>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -61,7 +61,7 @@ const PartnerModal = ({ isOpen, onClose }) => {
         <Typography variant="h6" gutterBottom>
           Become a Partner
         </Typography>
-        <form onSubmit={handleSubmit}>
+        <form action='' onSubmit={handleSubmit}>
           <FormField
             label="Name"
             name="name"
@@ -78,14 +78,14 @@ const PartnerModal = ({ isOpen, onClose }) => {
             fullWidth
             required
           />
-          <FormField
+          {/* <FormField
             label="Organization"
             name="organization"
             value={formData.organization}
             onChange={handleChange}
             fullWidth
-          />
-          <FormField
+          /> */}
+          {/* <FormField
             label="Message"
             name="message"
             value={formData.message}
@@ -93,7 +93,7 @@ const PartnerModal = ({ isOpen, onClose }) => {
             fullWidth
             multiline
             rows={4}
-          />
+          /> */}
           <Box display="flex" justifyContent="flex-end">
             <Button onClick={onClose} color="secondary" style={{ marginRight: '8px' }}>
               Cancel

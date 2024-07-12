@@ -19,27 +19,26 @@ const HeroPage = () => {
         <div className="flex flex-col w-full md:w-1/2 p-8 md:p-20 order-2 md:order-1">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800 font-serif">SASI</h1>
           <p className="px-5 pb-6 text-lg leading-7 text-[#777777]">
-            SASI (Share a Smile Initiative) is an expression of Joshiverse, that leverages the goodwill 
-            of our community, partners, and supporters, channeling their generosity towards enabling the 
+            SASI (Share a Smile Initiative) is an expression of Joshiverse, that leverages the goodwill
+            <button
+              className="text-[#e32c2c] font-bold py-2 px-4 inline ml-2"
+              aria-label="Expand"
+              title="Expand"
+              onClick={toggleExpand}
+            >
+              {isExpanded ? "Collapse" : "Expand"}
+            </button>
             <span className={`transition-opacity duration-500 ${isExpanded ? 'opacity-100 blur-none' : 'opacity-50 blur-sm'}`}>
-            <br />
-            disadvantaged to access quality education, encouraging them to grow holistically, and empowering 
-            them to lead!
-           
-              We strive to provide support in emergencies, address poverty, and protect children from 
-              abuse and exploitation. Our mission is to ensure that every child has the opportunity 
+              <br />
+              of our community, partners, and supporters, channeling their generosity towards enabling the
+              disadvantaged to access quality education, encouraging them to grow holistically, and empowering
+              them to lead!
+              We strive to provide support in emergencies, address poverty, and protect children from
+              abuse and exploitation. Our mission is to ensure that every child has the opportunity
               to reach their full potential.
             </span>
           </p>
-          <button
-            className="text-[#e32c2c] font-bold py-2 px-4 mb-4"
-            aria-label="Expand"
-            title="Expand"
-            onClick={toggleExpand}
-          >
-            {isExpanded ? "Collapse" : "Expand"}
-          </button>
-          <div className="flex flex-col md:flex-row">
+          <div className={`flex flex-col md:flex-row transition-all duration-500 ${isExpanded ? 'mt-6' : ''}`}>
             <button
               className="bg-[#e32c2c] text-white hover:bg-[#e25151] font-bold py-2 px-4 rounded mb-4 md:mb-0 md:mr-4"
               aria-label="Donate now"

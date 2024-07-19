@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Sasilogo from '../../asset/logo/sasi-icon.png';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
-import PartnerModal from '../../component/sasi/PartnerModal'; // Adjust the import path accordingly
+import PartnerModal from '../../component/sasi/PartnerModal';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +15,8 @@ const Navbar = () => {
 
   const handleNavigation = (path) => {
     navigate(path);
-    setIsOpen(false); // Close the menu when an item is clicked
+    console.log("I got here", path);
+    setIsOpen(false); 
   };
 
   const openModal = () => {
@@ -31,7 +32,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center p-4">
         <img className="w-24 ml-4 md:ml-16" src={Sasilogo} alt="SASI Logo" />
         <div className="hidden md:flex space-x-6 lg:space-x-14 text-lg font-semibold font-sans mr-4 lg:mr-16" style={{ fontWeight: 'bold', fontSize: '22px', fontFamily: 'initial' }}>
-          <div onClick={() => handleNavigation('/home')} className="cursor-pointer hover:text-[#e32c2c]">Home</div>
+          <div onClick={() => handleNavigation('/')} className="cursor-pointer hover:text-[#e32c2c]">Home</div>
           <div onClick={() => handleNavigation('/about')} className="cursor-pointer hover:text-[#e32c2c]">About</div>
           <div onClick={() => handleNavigation('/event')} className="cursor-pointer hover:text-[#e32c2c]">Event</div>
           <div onClick={() => handleNavigation('/contact')} className="cursor-pointer hover:text-[#e32c2c]">Contact</div>
@@ -51,7 +52,7 @@ const Navbar = () => {
       </div>
       {isOpen && (
         <div className="md:hidden bg-white text-black absolute top-16 left-0 right-0 z-50">
-          <div onClick={() => handleNavigation('/home')} className="block px-4 py-2 hover:bg-gray-200">Home</div>
+          <div onClick={() => handleNavigation('/')} className="block px-4 py-2 hover:bg-gray-200">Home</div>
           <div onClick={() => handleNavigation('/about')} className="block px-4 py-2 hover:bg-gray-200">About</div>
           <div onClick={() => handleNavigation('/event')} className="block px-4 py-2 hover:bg-gray-200">Event</div>
           <div onClick={() => handleNavigation('/contact')} className="block px-4 py-2 hover:bg-gray-200">Contact</div>

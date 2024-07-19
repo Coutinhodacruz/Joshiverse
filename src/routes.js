@@ -7,7 +7,7 @@ import WesleyOutreach from "./pages/sasi/WesleyOutreach";
 
 export const ROUTES = [
     {
-        path: '',
+        path: '/',
         element: <JoshiversePage/>
     },
 

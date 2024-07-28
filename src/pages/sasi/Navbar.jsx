@@ -32,7 +32,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center p-4">
         <img className="w-24 ml-4 md:ml-16" src={Sasilogo} alt="SASI Logo" />
         <div className="hidden md:flex space-x-6 lg:space-x-14 text-lg font-semibold font-sans mr-4 lg:mr-16" style={{ fontWeight: 'bold', fontSize: '22px', fontFamily: 'initial' }}>
-          <div onClick={() => handleNavigation('/')} className="cursor-pointer hover:text-[#e32c2c]">Home</div>
+          <div onClick={() => handleNavigation('/sasi')} className="cursor-pointer hover:text-[#e32c2c]">Home</div>
           <div onClick={() => handleNavigation('/about')} className="cursor-pointer hover:text-[#e32c2c]">About</div>
           <div onClick={() => handleNavigation('/event')} className="cursor-pointer hover:text-[#e32c2c]">Event</div>
           <div onClick={() => handleNavigation('/contact')} className="cursor-pointer hover:text-[#e32c2c]">Contact</div>

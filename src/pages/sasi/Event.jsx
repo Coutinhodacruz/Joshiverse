@@ -27,7 +27,7 @@ const Event = () => {
                 <div>
                   <Link
                     className="block"
-                    to="/our-work/emergency-response"
+                    to="/makoko-outreach"
                     aria-label="Responding to emergencies">
                     <div className="relative overflow-hidden border-b-8 border-red-600 rounded-none h-64 md:h-80">
                       <img
@@ -56,7 +56,7 @@ const Event = () => {
                 <div>
                   <Link
                     className="block"
-                    to="/our-work/child-poverty"
+                    to="/percil-outreach"
                     aria-label="Helping children in poverty">
                     <div className="relative overflow-hidden border-b-8 border-red-600 rounded-none h-64 md:h-80">
                       <img
@@ -85,7 +85,7 @@ const Event = () => {
                 <div>
                   <Link
                     className="block"
-                    to="/our-work/child-protection"
+                    to="/wesley-outreach"
                     aria-label="Protecting children most at risk">
                     <div className="relative overflow-hidden border-b-8 border-red-600 rounded-none h-64 md:h-80">
                       <img

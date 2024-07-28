@@ -18,17 +18,17 @@ export const ROUTES = [
 
     {
 
-        path: '/our-work/emergency-response',
+        path: '/makoko-outreach',
         element: <MakokoOutreach />
       },
 
       {
-        path: '/our-work/child-poverty',
+        path: '/percil-outreach',
         element: <PercilOutreach />
       },
 
       {
-        path: '/our-work/child-protection',
+        path: '/wesley-outreach',
         element: <WesleyOutreach />
       },
 

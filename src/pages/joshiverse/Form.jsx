@@ -68,7 +68,7 @@ const Form = () => {
           <label>Other?</label>
           <textarea name='Others' className='px-3 py-4 text-[#990000]' rows='5'></textarea>
         </div>
-        <input className='bg-white text-[#990000] px-3 py-4 w-2/4 flex items-center hover:bg-[#e25151] justify-center' type='submit' value='Submit' id='submit' style={{cursor: 'pointer'}}/>
+        <input className='bg-white text-[#990000] px-3 py-4 w-2/4 flex items-center hover:bg-[#e25151] justify-center' type='submit' value='Submit' id='submit' style={{cursor: 'pointer', width: '30%'}}/>
       </form>
     </div>
   );

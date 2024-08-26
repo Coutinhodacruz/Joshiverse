@@ -1,16 +1,17 @@
+const dotenv = require('dotenv');
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
-
 const cors = require('cors');
-
-const dotenv = require('dotenv');
 
 dotenv.config();
 
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
+
+
+
 
 app.post('/send-email', (req, res) => {
     const { fullname, email, phoneNumber, emailSubject, message } = req.body;
@@ -42,6 +43,6 @@ app.post('/send-email', (req, res) => {
     });
 });
 
-app.listen(3000, () => {
-    console.log('Server is running on port 3000');
+app.listen(8080, () => {
+    console.log('Server is running on port 8080');
 });

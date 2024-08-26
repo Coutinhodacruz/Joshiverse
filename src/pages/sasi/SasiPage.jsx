@@ -3,7 +3,7 @@ import HeroPage from './HeroPage'
 import About from './About'
 import Event from './Event'
 import Contact from './Contact'
-import ScrollToTop from '../../scripts/ScrollToTop'
+import ScrollToTop from '../../ScrollToTop'
 
 const SasiPage = () => {
 

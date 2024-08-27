@@ -21,7 +21,7 @@ const Gallery = () => {
       navigate('/podcasts');
     }
     if(item.id === 3){
-      navigate('/youtube');
+      window.open('https://www.youtube.com/@joshiverse', '_blank', 'noopener noreferrer');
     }
   };
 

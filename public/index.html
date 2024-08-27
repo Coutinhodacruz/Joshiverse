@@ -40,4 +40,16 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script>
+    window.scrollTo(0, 0);
+    if (window) {
+      // Check if the pathname is empty or the root ("/")
+      if (window.location.pathname === "/") {
+        document.title = "Joshiverse";
+      }
+       else {
+        document.title = "SASI";
+      }
+    }
+  </script>
 </html>

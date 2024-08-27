@@ -4,7 +4,7 @@ import Image from '../../asset/images/image.png';
 
 const About = () => {
   return (
-    <div className='flex flex-col lg:flex-row justify-center items-center pt-20 lg:pt-40 gap-10 lg:gap-5 px-4'>
+    <div id='about-section' className='flex flex-col lg:flex-row justify-center items-center pt-20 lg:pt-40 gap-10 lg:gap-5 px-4'>
       <div className='text-[#d45e5e] flex flex-col gap-y-5 max-w-lg'>
         <p className='text-sm font-bold'>ABOUT US</p>
         <div className='flex flex-col gap-4'>
@@ -15,7 +15,8 @@ const About = () => {
           <p className='flex gap-3 items-center'>
             <FaCheckSquare color='#d45e5e' />
             Empower passionate learners, enable them to grow professionally
-            and build leadership competence.          </p>
+            and build leadership competence.
+          </p>
           <p className='flex gap-3 items-center'>
             <FaCheckSquare color='#d45e5e' />
             Excepteur sint occaecat cupidatat non proident

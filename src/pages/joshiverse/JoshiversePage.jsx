@@ -7,10 +7,12 @@ import Gallery from './Gallery'
 import Footer from './Footer'
 import Form from './Form'
 import Socials from './Socials'
+import ScrollToTop from '../../ScrollToTop'
 
 const JoshiversePage = () => {
   return (
     <div className='bg-[#edeef6]'>
+      <ScrollToTop/>
       <NavBar/>
       <Hero/>
       <Statistics/>
@@ -19,7 +21,6 @@ const JoshiversePage = () => {
       <Form/>
       <Socials/>
       <Footer/>
-
     </div>
   )
 }

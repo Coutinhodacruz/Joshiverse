@@ -3,7 +3,9 @@ import HeroPage from './HeroPage'
 import About from './About'
 import Event from './Event'
 import Contact from './Contact'
-import ScrollToTop from '../../ScrollToTop'
+import ScrollToTop from '../../scripts/ScrollToTop'
+import Socials from "../joshiverse/Socials";
+import Footer from "../joshiverse/Footer";
 
 const SasiPage = () => {
 
@@ -14,6 +16,7 @@ const SasiPage = () => {
         <About/>
        <Event/>
        <Contact />
+        <Footer/>
     </div>
   )
 }
